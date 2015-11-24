@@ -2,10 +2,36 @@
 <html>
 <head>
 	<script src="index.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 
 <body>
+	<form id="search-form">
+		<label> Search For Artist: <input type = "text" id="query" value="" placeholder="Type an Artist Name"/></label>
+		<button type = "submit" id="search"class="js-submit">SEARCH</button>
+	</form>
 
+	<div id="container">
 
+	</div>
+
+	<!-- THE MODAL TO DISPLAY ALBUMS -->
+
+	<div class="modal fade" id="modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title"> Albums </h4>
+				</div>
+				<div class="modal-body">
+					<!-- HERE GO THE ALBUMS -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary"> CLOSE </button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
